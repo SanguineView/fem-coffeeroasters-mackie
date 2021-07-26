@@ -1,0 +1,41 @@
+.site-header {
+    max-width:1280px;
+    margin:0 auto;
+    padding:40px 0;
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+
+    .navigation{
+
+        &__ul {
+            display:flex;
+            justify-content: space-between;
+            align-items: center;
+            gap:30px;
+            margin:0;
+            padding:0;
+        }
+
+        &__li {
+            list-style-type:none;
+            padding:0;
+        }
+
+        &__a {
+            font-family: 'Barlow', sans-serif;
+            color:$primary-grey;
+            font-size:1.2rem;
+            font-weight:500;
+            letter-spacing:0.92px;
+            line-height:125%;
+            text-decoration: none;
+            text-transform: uppercase;
+            transition:all 0.3s ease;
+
+            &:hover {
+                color:$primary-blue;
+            }
+        }
+    }
+}

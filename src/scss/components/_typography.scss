@@ -1,0 +1,23 @@
+
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+
+ h1, h2, h3, h4, h5, h5 {
+    font-family:'Fraunces', serif;
+    margin:0;
+}
+  
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+p {
+  color:$primary-grey;
+  font-size:16px;
+  margin:0;
+  line-height:26px;
+}

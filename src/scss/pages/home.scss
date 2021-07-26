@@ -1,0 +1,220 @@
+.home-banner {
+    max-width:1280px;
+    margin:0 auto;
+    padding:105px 85px;
+    background:url(../images/home/desktop/image-hero-coffeepress.jpg) no-repeat;
+    border-radius: 10px;
+
+    &__copy {
+        
+    }
+
+    &__heading {
+        font-size:72px;
+        color:$primary-cream;
+        line-height:72px;
+        max-width: 11ch;
+        margin-bottom:45px;
+    }
+
+    &__paragraph {
+        font-size:16px;
+        font-weight:100;
+        line-height:26px;
+        color:$primary-cream;
+        max-width:45ch;
+        margin-bottom:60px;
+    }
+}
+
+.home-content {
+    max-width:1280px;
+    margin:0 auto;
+    padding-top:200px;
+}
+
+.home-collection {
+    
+    .altBig {
+        font-size:150px;
+        text-transform: lowercase;
+        color:$primary-grey;
+        -webkit-mask-image: -webkit-gradient(linear, left 90%, left bottom, from(#FEFCF7), to(rgba(254,253,247,0.01)));
+        text-align: center;
+    }
+
+    &__container {
+        display:flex;
+        justify-content: space-around;
+        align-items: stretch;
+        gap:30px;
+        margin-top:-65px;
+        position:relative;
+        z-index: 100;
+    }
+
+    &__item {
+        width:25%;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    &__img {
+        max-width:255px;
+        margin-bottom:75px;
+    }
+
+    &__heading {
+        color:$primary-blue;
+        font-size:24px;
+        line-height:32px;
+        margin-bottom:20px;
+    }
+
+    &__paragraph {
+        color:$primary-blue;
+        font-size:16px;
+        line-height: 26px;
+    }
+}
+
+.choose {
+    background:$primary-dark;
+    border-radius:10px;
+    margin-top:200px;
+    padding:100px 0;
+
+    &__heading {
+        font-size:40px;
+        line-height:48px;
+        color:$primary-cream;
+        text-align:center;
+        margin-bottom:30px;
+    }
+
+    &__p {
+        font-size:16px;
+        line-height:26px;
+        font-weight:100;
+        color:$primary-cream;
+        text-align: center;
+        max-width: 56ch;
+        margin:0 auto 85px;
+        opacity: 0.8;
+
+    }
+
+    &__reason {
+        display: flex;
+        justify-content: center;
+        align-items: stretch;
+        gap:30px;
+        margin-bottom: -250px;
+
+        &--item {
+            background:$primary-cyan;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: center;
+            text-align: center;
+            border-radius:10px;
+            padding:70px 50px 45px;
+    
+        }
+
+        &--img {
+            margin-bottom:55px;
+        }
+
+        &--heading {
+            color:$primary-cream;
+            font-size:24px;
+            line-height:32px;
+            margin-bottom:20px;
+        }
+
+        &--p {
+            color:$primary-cream;
+            font-size:16px;
+            line-height:26px;
+            font-weight:100;
+            max-width: 28ch;
+            margin:0 auto;
+        }
+    }
+}
+
+.how {
+    padding-top:350px;
+
+    .heading--lightSm {
+        font-size:24px;
+        line-height:32px;
+        color:$primary-grey;
+        margin-bottom:75px;
+        margin-left:85px;
+    }
+
+    &__container {
+        display: flex;
+        padding-left:85px;
+    }
+
+    &__item {
+        border-top:2px solid $primary-orange;
+        position:relative;
+        padding-top:75px;
+        flex: 1 auto;
+
+        &::before {
+            content:'';
+            height:31px;
+            width:31px;
+            border:2px solid $primary-cyan;
+            border-radius:50%;
+            display: block;
+            position: absolute;
+            top:-20px;
+            background:$primary-cream;
+        }
+
+        &--num {
+            font-family:'Fraunces', serif;
+            color:$primary-orange;
+            font-size:72px;
+            line-height:72px;
+            font-weight:700;
+            margin-bottom:40px;
+        }
+
+        &--heading {
+            color:$primary-blue;
+            font-size:32px;
+            line-height:36px;
+            max-width:10ch;
+            margin-bottom:45px;
+        }
+
+        &--p {
+            color:$primary-blue;
+            font-size:16px;
+            line-height: 26px;
+            max-width:31ch;
+        }
+
+
+    }
+
+    &__btn {
+        margin-top:65px;
+        margin-left:85px;
+    }
+
+    &__item:last-of-type {
+        border:none;
+    }
+}
