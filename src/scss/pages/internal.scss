@@ -342,3 +342,81 @@
         border:none;
     }
 }
+
+.create {
+    padding-top:165px;
+    max-width:1110px;
+    margin:0 auto 255px;
+
+    &__container {
+        display:flex;
+    }
+
+    &__steps {
+        width:380px;
+    }
+
+    &__choices {
+        width:730px;
+
+        &--choice {
+            padding-bottom:85px;
+
+            &-head {
+                display: flex;
+                align-items: center;
+                width: 100%;
+                cursor: pointer;
+
+                h3 {
+                    font-size: 40px;
+                    line-height: 48px;
+                    color:$primary-grey;
+                }
+
+                img {
+                    transition: all 0.5s ease;
+                    margin-left:auto;
+                }
+
+                &.active {
+
+                    h3 {
+
+                    }
+
+                    img {
+                        transform:rotate(180deg);
+                    }
+
+                    & + .create__choices--choice-body {
+                        max-height: 235px;
+                    }
+                }
+            }
+
+            &-body {
+
+                height:0;
+                overflow:hidden;
+                display: flex;
+                gap: 25px;
+                padding-top:45px;
+                transition:all 1s ease;
+
+                h4 {
+                    font-size: 24px;
+                    line-height: 32px;
+                    color:$primary-blue;
+                    margin-bottom:25px;
+                }
+
+                &-item {
+                    background:$secondary-cream;
+                    padding:35px 25px 85px;
+                    border-radius:8px;
+                }
+            }
+        }
+    }
+}
