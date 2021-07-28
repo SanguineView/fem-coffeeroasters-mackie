@@ -4,6 +4,8 @@
     padding:105px 85px;
     background:url(../images/home/desktop/image-hero-coffeepress.jpg) no-repeat;
     border-radius: 10px;
+    background-position:top right;
+    background-size:cover !important;
 
     &__copy {
         
@@ -24,6 +26,11 @@
         color:$primary-cream;
         max-width:45ch;
         margin-bottom:60px;
+    }
+
+    @include respond(tab) {
+        max-width:960px;
+        background:url(../images/home/tablet/image-hero-coffeepress.jpg) no-repeat;
     }
 }
 
@@ -113,6 +120,11 @@
         align-items: stretch;
         gap:30px;
         margin-bottom: -250px;
+
+        @include respond(tab) {
+            align-items: center;
+            flex-direction: column;
+        }
 
         &--item {
             background:$primary-cyan;

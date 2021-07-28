@@ -39,7 +39,7 @@
             transition:all 0.3s ease;
 
             &:hover {
-                color:$primary-blue;
+                color:#fff;
             }
         }
     }
@@ -67,7 +67,14 @@
             transition:all 0.3s ease;
 
             &:hover {
-                color:$primary-blue;
+
+                svg path {
+                    fill:$primary-orange;
+                }
+            }
+
+            svg path {
+                transition:all 0.3s ease;
             }
         }
     }
